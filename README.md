@@ -57,7 +57,7 @@ npm test
 Para utilizar a API no Postman, siga os passos abaixo:
 
 1. Acesse a URL `http://localhost:3000/`.
-2. Leia todos os passos e configurações necessarias informadas na pagina web.
+2. Leia todos os passos e configurações necessarios informados na pagina web.
 3. Utilize como preferir.
 
 
@@ -65,8 +65,8 @@ Para utilizar a API no Postman, siga os passos abaixo:
 
 - `app.js`: Arquivo principal da aplicação
 - `test.js`: Arquivo de testes de unidade
-- `/public`: pasta que armazena html responavel pela instrução no postman
-- `/public/index.html`: html responavel pela instrução no postman
+- `/public`: pasta que armazena html responsavel pela instrução no postman
+- `/public/index.html`: html responsavel pela instrução no postman
 - `package.json`: Arquivo de manifesto do projeto Node.js
 
 ## Licença

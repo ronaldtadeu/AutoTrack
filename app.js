@@ -160,7 +160,6 @@ app.put('/utilizacoes/:id/finalizar', (req, res) => {
     automovel.emUso = false;
     utilizacao.dataTermino = new Date();
 
-    console.log(utilizacao);
     res.status(200).json(utilizacao);
     
 });
