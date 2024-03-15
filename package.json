@@ -1,0 +1,20 @@
+{
+  "name": "autotrack",
+  "version": "1.0.0",
+  "description": "API para gestão de frota veicular",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node app.js"
+  },
+  "author": "Ronald Tadeu Alves Pinto Filho",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

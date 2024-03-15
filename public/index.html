@@ -1,0 +1,169 @@
+<!-- 
+    Esta pagina HTML serve para ensinar como utilizar a api utilizando 
+    o Postman e pode ser acessada utilizando a url abaixo:
+
+    url: http://localhost:3000/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Controle de Automóveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Documentação - Controle de Automóveis</h1>
+
+    <h2>Configurando o Postman</h2>
+
+    <p>Para utilizar as rotas da API de controle de automóveis utilizando o Postman, siga os passos abaixo:</p>
+
+    <ol>
+        <li>Abra o Postman e crie uma nova requisição.</li>
+        <li>Selecione o método HTTP desejado (GET, POST, PUT, DELETE) para a rota desejada.</li>
+        <li>Insira a URL da rota desejada. Por exemplo:</li>
+        <code>http://localhost:3000/automoveis</code>
+        <li>Se necessário, adicione os parâmetros de consulta na seção "Params" ou "Query Params".</li>
+        <li>Se necessário, adicione o corpo da requisição na seção "Body". Certifique-se de selecionar o formato
+            adequado (por exemplo, JSON).</li>
+        <li>Clique em "Send" para enviar a requisição.</li>
+    </ol>
+
+    <h2>Exemplos de Uso</h2>
+
+    <p>Abaixo estão alguns exemplos de uso das rotas da API:</p>
+
+    <h3>Cadastrar um Automóvel (POST)</h3>
+    <p><strong>Método:</strong> POST</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/automoveis</code></p>
+    <p><strong>Corpo:</strong></p>
+    <code>
+        {
+            "placa": "ABC1234",
+            "cor": "Preto",
+            "marca": "Fiat"
+        }
+    </code>
+
+    <h3>Listar Automóveis (GET)</h3>
+    <p><strong>Método:</strong> GET</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/automoveis</code></p>
+
+    <h3>Recuperar um Automóvel por ID (GET)</h3>
+    <p><strong>Método:</strong> GET</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/automoveis/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do automóvel desejado.</p>
+
+    <h3>Atualizar um Automóvel por ID (PUT)</h3>
+    <p><strong>Método:</strong> PUT</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/automoveis/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do automóvel que deseja atualizar.</p>
+    <p><strong>Corpo:</strong> (dados a serem atualizados)</p>
+    <code>
+        {
+            "placa": "XYZ5678",
+            "cor": "Vermelho",
+            "marca": "Toyota"
+        }
+    </code>
+
+    <h3>Excluir um Automóvel por ID (DELETE)</h3>
+    <p><strong>Método:</strong> DELETE</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/automoveis/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do automóvel que deseja excluir.</p>
+
+    <h3>Cadastrar um Motorista (POST)</h3>
+    <p><strong>Método:</strong> POST</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/motoristas</code></p>
+    <p><strong>Corpo:</strong></p>
+    <code>
+        {
+            "nome": "João da Silva"
+        }
+    </code>
+
+    <h3>Listar Motoristas (GET)</h3>
+    <p><strong>Método:</strong> GET</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/motoristas</code></p>
+
+    <h3>Recuperar um Motorista por ID (GET)</h3>
+    <p><strong>Método:</strong> GET</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/motoristas/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do motorista desejado.</p>
+
+    <h3>Atualizar um Motorista por ID (PUT)</h3>
+    <p><strong>Método:</strong> PUT</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/motoristas/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do motorista que deseja atualizar.</p>
+    <p><strong>Corpo:</strong> (dados a serem atualizados)</p>
+    <code>
+        {
+            "nome": "Maria da Silva"
+        }
+    </code>
+
+    <h3>Excluir um Motorista por ID (DELETE)</h3>
+    <p><strong>Método:</strong> DELETE</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/motoristas/{id}</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do motorista que deseja excluir.</p>
+
+    <h3>Criar Registro de Utilização de Automóvel (POST)</h3>
+    <p><strong>Método:</strong> POST</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/utilizacoes</code></p>
+    <p><strong>Corpo:</strong></p>
+    <code>
+        {
+            "automovelId": 1,
+            "motoristaId": 1,
+            "dataInicio": "2024-03-14T10:00:00",
+            "motivoUtilizacao": "Viagem de negócios"
+        }
+    </code>
+
+    <h3>Finalizar Utilização de Automóvel por ID (PUT)</h3>
+    <p><strong>Método:</strong> PUT</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/utilizacoes/{id}/finalizar</code></p>
+    <p><strong>Substitua</strong> <code>{id}</code> pelo ID real do registro de utilização que deseja finalizar.</p>
+
+    <h3>Listar Registros de Utilização de Automóvel (GET)</h3>
+    <p><strong>Método:</strong> GET</p>
+    <p><strong>URL:</strong> <code>http://localhost:3000/utilizacoes</code></p>
+
+    <h2>Observações</h2>
+
+    <ul>
+        <li>Substitua <code>{id}</code> na URL pelos IDs reais dos automóveis ou motoristas.</li>
+        <li>Para rotas que exigem autenticação, consulte a documentação adicional.</li>
+        <li>Para mais detalhes sobre as rotas disponíveis, consulte o código-fonte do projeto.</li>
+    </ul>
+</body>
+
+</html>

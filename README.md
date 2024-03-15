@@ -52,16 +52,22 @@ Para executar os testes de unidade, utilize o seguinte comando:
 
 npm test
 
+## Utilização no Postman
+
+Para utilizar a API no Postman, siga os passos abaixo:
+
+1. Acesse a URL `http://localhost:3000/`.
+2. Leia todos os passos e configurações necessarias informadas na pagina web.
+3. Utilize como preferir.
+
 
 ## Estrutura do Projeto
 
 - `app.js`: Arquivo principal da aplicação
 - `test.js`: Arquivo de testes de unidade
+- `/public`: pasta que armazena html responavel pela instrução no postman
+- `/public/index.html`: html responavel pela instrução no postman
 - `package.json`: Arquivo de manifesto do projeto Node.js
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request para melhorias, correções de bugs ou novas funcionalidades.
 
 ## Licença
 
