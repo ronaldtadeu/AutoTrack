@@ -57,7 +57,7 @@ npm test
 Para utilizar a API no Postman, siga os passos abaixo:
 
 1. Acesse a URL `http://localhost:3000/`.
-2. Leia todos os passos e configurações necessarios informados na pagina web.
+2. Leia todas as etapas e configurações necessarias informadas na pagina web.
 3. Utilize como preferir.
 
 
